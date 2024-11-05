@@ -1,0 +1,14 @@
+/* src/Home.css */
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
