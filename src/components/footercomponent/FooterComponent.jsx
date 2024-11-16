@@ -6,7 +6,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const FooterComponent = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gradient-to-b from-blue-900 to-black text-white">
       <div className="container mx-auto py-2 px-4">
         
         {/* Company Name and Motto */}
@@ -16,8 +16,8 @@ const FooterComponent = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-xl font-bold">MyPortfolio</h1>
-          <p className="text-x1 text-gray-400">Crafting Your Style, One Stitch at a Time</p>
+          <h1 className="text-xl font-bold">DFashion</h1>
+          <p className="text-x1 text-gray-400">Artistry in Tailoring</p>
           {/*<JumbotronComponent/>*/}
         </motion.div>
 

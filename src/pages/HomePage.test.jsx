@@ -26,7 +26,7 @@ const HomePage = () => {
       </div>
 
       {/* Additional Section: Our Craft */}
-      <section className="relative z-10 flex flex-col items-center justify-center py-16 md:py-24 bg-transparent text-white text-center">
+      <sectio className="relative z-10 flex flex-col items-center justify-center py-16 md:py-24 bg-transparent text-white text-center">
         <motion.h2
           className="text-3xl md:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-teal-300 to-blue-400"
           initial={{ opacity: 0, y: -100 }}
@@ -77,7 +77,7 @@ const HomePage = () => {
             </p>
           </motion.div>
         </div>
-      </section>
+      </sectio>
     </div>
   );
 };

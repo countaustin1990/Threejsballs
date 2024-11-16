@@ -1,20 +1,22 @@
 // AboutPage.jsx
-import AboutHero from '../components/abouthero/AboutHero';
+import AboutHero from '../components/abouthero/AboutHero.test';
 //import AboutMaterials from '../components/aboutmaterials/AboutMaterials';
 //import TailoringProcess from '../components/tailoringprocess/TailoringProcess';
-import MeetTheTailors from '../components/meetthetailors/MeetTheTailors';
+//import MeetTheTailors from '../components/meetthetailors/MeetTheTailors';
 //import BeforeAfterShowcase from '../components/beforeaftershowcase/BeforeAfterShowcase';
 //import TailoringServices from '../components/tailoringservices/TailoringServices';
 //import Testimonials from '../components/testimonials/Testimonials';
-import MeasurementGuide from '../measurementguide/MeasurementGuide';
+//import MeasurementGuide from '../measurementguide/MeasurementGuide';
 //import ContactCTA from '../components/contactcta/ContactCTA';
 //import TailoringVisualizer from '../components/tailoringvisualizer/TailoringVisualizer';
 
+
 const AboutPage = () => {
+ 
   return (
-    <div>
+    <div className="backdrop-blur-md bg-gradient-to-b from-blue-950 to-black">
       {/* Hero Section */}
-      <AboutHero />
+      <AboutHero className="backdrop-blur-md bg-gradient-to-t from-blue-950 to-black" />
 
       {/* Materials and Fabric Quality
       <section className="px-4">

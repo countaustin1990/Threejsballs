@@ -25,7 +25,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-800 to-gray-900 text-white">
+    <div className="flex flex-col items-center justify-center min-h-screen backdrop-blur-md bg-gradient-to-b from-blue-900 to-black text-white">
       <motion.h2
         className="text-3xl md:text-4xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-teal-300 to-blue-400 mt-24"
         initial={{ opacity: 0, y: -50 }}
@@ -39,17 +39,17 @@ const ContactPage = () => {
         <div className="flex flex-col items-center p-6 cursor-pointer">
           <FaPhone className="text-3xl mb-2" />
           <h2 className="text-xl font-semibold">Phone</h2>
-          <p className='text-gray-500'>+1 (555) 123-4567</p>
+          <p className='text-gray-400'>+1 (555) 123-4567</p>
         </div>
         <div className="flex flex-col items-center p-6 cursor-pointer">
           <FaEnvelope className="text-3xl mb-2" />
           <h2 className="text-xl font-semibold">Email</h2>
-          <p className="text-gray-500">contact@fashionbrand.com</p>
+          <p className="text-gray-400">info@dfashion.com</p>
         </div>
         <div className="flex flex-col items-center p-6 cursor-pointer">
           <FaMapMarkerAlt className="text-3xl mb-2" />
           <h2 className="text-xl font-semibold">Address</h2>
-          <p className="text-gray-500">123 Fashion Ave, New York, NY</p>
+          <p className="text-gray-400">123 Fashion Ave, New York, NY</p>
         </div>
       </div>
 
@@ -58,7 +58,7 @@ const ContactPage = () => {
       {/*test end */}
       <form
         onSubmit={handleSubmit}
-        className="bg-gray-700 p-6 rounded-lg shadow-lg w-full max-w-md"
+        className="bg-gray-700/20 p-6 rounded-lg shadow-lg w-full max-w-md backdrop-blur-md mb-5"
       >
         <motion.div
           className="mb-4"
@@ -119,13 +119,15 @@ const ContactPage = () => {
             className="w-full p-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
           />
         </motion.div>
-
-        <button
+        <div className="flex items-center justify-center">
+          <button
           type="submit"
-          className="w-full p-2 bg-green-500 hover:bg-green-600 rounded transition duration-300 focus:outline-none focus:ring-2 focus:ring-green-400"
+          className="bg-purple-700 hover:bg-purple-500 text-white font-semibold py-3 px-6 md:py-4 md:px-8 rounded-lg shadow-lg transition duration-300"
         >
           Send Message
         </button>
+        </div>
+        
       </form>
     </div>
   );

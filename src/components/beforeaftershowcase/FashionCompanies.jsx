@@ -1,30 +1,30 @@
 
 
-const Testimonials = () => {
+const FashionCompanies = () => {
   const testimonials = [
     {
       text: "This service has completely transformed my workflow. Highly recommend to anyone looking for reliable and efficient tools.",
-      name: "Jane Doe",
+      name: "Sir. Joeflex",
       role: "Product Manager",
       img: "https://via.placeholder.com/50",
     },
     {
       text: "Amazing support and a fantastic product. I've been using it for years, and it keeps getting better.",
-      name: "John Smith",
-      role: "Software Engineer",
+      name: "Campton Eze",
+      role: "Stock Broker",
       img: "https://via.placeholder.com/50",
     },
     {
       text: "I've tried many options, but this one stands out. The quality and attention to detail are unmatched.",
-      name: "Emily Clark",
-      role: "Designer",
+      name: "Emilie Clarks",
+      role: "Entrepreneur",
       img: "https://via.placeholder.com/50",
     },
   ];
 
   return (
-    <div className="bg-gradient-to-t from-blue-500 via-blue-950 to-gray-800 min-h-screen flex items-center justify-center">
-      <section className="py-12 px-6 sm:px-12 lg:px-24">
+    <div className="bg-transparent  min-h-screen flex items-center justify-center">
+      <section className="py-12 px-6 sm:px-12 lg:px-15">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-extrabold text-center text-white mb-8">
             What Our Clients Say
@@ -58,4 +58,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default FashionCompanies;

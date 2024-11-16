@@ -2,6 +2,7 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { motion } from 'framer-motion';
+import FashionCompanies from '../components/beforeaftershowcase/FashionCompanies';
 //import Navbar from '../components/Navbar';
 
 const HomePage = () => {
@@ -94,7 +95,7 @@ const HomePage = () => {
         {/* Three-Column Layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 max-w-6xl">
           <motion.div
-            className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="bg-gray-300/20 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 backdrop-blur-md"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -106,7 +107,7 @@ const HomePage = () => {
           </motion.div>
 
           <motion.div
-            className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="bg-gray-300/20 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 backdrop-blur-md"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
@@ -118,7 +119,7 @@ const HomePage = () => {
           </motion.div>
 
           <motion.div
-            className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="bg-gray-300/20 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 backdrop-blur-md"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -130,6 +131,7 @@ const HomePage = () => {
           </motion.div>
         </div>
       </section>
+      <FashionCompanies/>
     </div>
   );
 };

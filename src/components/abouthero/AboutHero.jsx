@@ -5,12 +5,15 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { FaArrowDown } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
+import Jumbotron from '../footercomponent/JumbotronComponent.test'
+import './style.css'
 
 const AboutHero = () => {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-blue-900 to-black text-white">
+    <>
+      <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-blue-900 to-black text-white">
       {/* Three.js Canvas */}
       <Canvas>
         <OrbitControls enableZoom={false} />
@@ -27,7 +30,7 @@ const AboutHero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: 'easeOut' }}
       >
-        <h1 className="text-4xl font-bold md:text-6xl">Welcome to Our World</h1>
+        <h3 className="text-3xl font-bold md:text-6xl">Welcome to Our World</h3>
         <p className="text-lg md:text-2xl max-w-lg mx-auto text-gray-200">
           Experience the best in digital art and creativity with our 3D-powered experiences.
         </p>
@@ -56,6 +59,9 @@ const AboutHero = () => {
         </motion.div>
       </IconContext.Provider>
     </section>
+    <Jumbotron/>
+    </>
+    
   );
 };
 

@@ -42,21 +42,21 @@ const Projects = ({ theme }) => {
 
 
   return (
-    <div className={`container-fluid py-12  ${theme === 'light' ? 'bg-gray-200 text-gray-800' : 'bg-gray-800 text-white'}`}>
-      <h1 className="text-4xl font-bold text-center mb-8 mt-20">Our Services</h1>
+    <div className={`container-fluid py-12 bg-gradient-to-b from-blue-950 to-black`}>
+      <h1 className="text-3xl md:text-4xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-teal-300 to-blue-400 mt-24 text-center">Our Services</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <div
             key={index}
-            className={`p-6 shadow-lg rounded-lg transition-transform  transform hover:scale-105 ${theme === 'light' ? 'bg-white border border-gray-300 hover:bg-gray-700 hover:text-gray-200' : 'bg-gray-700 border border-gray-600 hover:bg-gray-200 hover:text-gray-700'}`}
+            className={`p-6 shadow-lg rounded-lg transition-transform backdrop-blur-md  transform hover:scale-105 ${theme === 'light' ? 'bg-gray-400/20 border border-gray-300 hover:bg-gray-700 hover:text-gray-200' : 'bg-gray-700 border border-gray-600 hover:bg-gray-200 hover:text-gray-700'}`}
           >
             <img 
               src={service.imageUrl} 
               alt={service.title} 
               className="w-full h-40 object-cover rounded-t-lg mb-4" 
             />
-            <h2 className="text-xl font-semibold mb-2">{service.title}</h2>
-            <p className="className={`${theme === 'light' ? 'bg-white' : 'bg-gray-700'}`}">{service.description}</p>
+            <h2 className="text-xl font-semibold mb-2 text-gray-200">{service.title}</h2>
+            <p className="className={text-gray-300" >{service.description}</p>
           </div>
         ))}
       </div>

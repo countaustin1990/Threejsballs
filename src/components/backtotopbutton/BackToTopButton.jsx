@@ -31,7 +31,7 @@ const BackToTopButton = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-4 right-4 p-5 font-bold rounded-full bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+      className={`fixed bottom-4 right-4 p-5 font-bold rounded-full backdrop-blur-sm bg-gradient-to-r from-purple-500 via-blue-400 to-yellow-400 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
       style={{ display: isVisible ? 'block' : 'none' }}
       aria-label="Back to top"
     >
